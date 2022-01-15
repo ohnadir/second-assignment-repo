@@ -294,7 +294,7 @@ footer{
     }
 }
 @media screen and (max-width:768px){
-    nav{
+    header{
         width: 100%;
     }
     nav .logo h1{
