@@ -1,4 +1,5 @@
-*{
+
+body{
     padding: 0;
     margin: 0;
 }
@@ -62,11 +63,6 @@ button:hover{
 .prebookbtn i:hover{
     color: #E02C6D;
 }
-
-.title-photo{
-    overflow: hidden;
-    background-image: url("images/Circle\ design.svg");
-}
 .container img{
     overflow: hidden;
     width: 450px;
@@ -99,7 +95,6 @@ button:hover{
 }
 .popular-products .title{
     text-align: center;
-    margin: auto 0px;
     padding-bottom: 30px;
 }
 .products{
@@ -160,16 +155,72 @@ button:hover{
     float: right;
     color: #E02C6DDE;
     font-weight: bold;
-    padding-bottom: 100px;
     display: inline;
 }
 .popular-products a .fa-arrow-right{
     padding-left: 8px;
 }
-
+.new-products {
+    width: 1047px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+.new-product{
+    display: flex;
+    justify-content: space-between;
+}
+.new-products .heading{
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.new-products img{
+    width: 300px;
+}
+.new-pro-card{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 13px;
+    position: relative;
+}
+.new-pro-card .products-description {
+    padding-top: 16px;
+}
+.new-pro-card .products-description h1{
+    font-size: 28px;
+    padding-bottom: 6px;
+}
+.new-pro-card .products-description span{
+    display: inline;
+    background-color: #f14705;
+    border-radius: 50%;
+    padding: 18px;
+    position: absolute;
+    right: 10%;
+    bottom: 28%;
+    color: white;
+}
+.new-pro-card .products-description .btn{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.5s;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    border: 2px solid #E02C6D;
+    transition: all .6s;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.new-pro-card .products-description .btn:hover{
+    background-color: white;
+    color: #E02C6D;
+}
 /* Footer Style */
 
 footer{
+    width: 100%;
     margin-top: 100px;
     background-color: #0A0826;
 }
@@ -194,4 +245,194 @@ footer{
 }
 .foot .social-icon .fab{
     padding: 16px;
+}
+@media screen and (max-width:1080px){
+    nav {
+        width: 100%;
+    }
+    .container{
+        width: 900px;
+    }
+    .popular-brand {
+        width: 900px;
+    }
+    .popular-products{
+        width: 900px;
+    }
+    .new-products{
+        width: 900px;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        width: 100%;
+    }
+    nav .logo h1{
+        padding-top: 35px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    .container {
+        width: 700px;
+        padding: 0 16px;
+        margin: 0 ;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .container img{
+        width: 100%;
+        transition: transform 1s;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 42px;
+        color: black;
+        padding-bottom: 8px;
+        line-height: 50px;
+    }
+    .popular-brand{
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .popular-brand img{
+        padding: 15px 15px;
+    }
+    .popular-brand .top-brand{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 35px 61px;
+        border: navy;
+    }
+    .popular-products {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 16px;
+    }
+    .products{
+        justify-items: start;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products img{
+        width: 100px;
+    }
+    .new-products{
+        width: 700px;
+        padding: 0 16px;
+    }
+    .products img{
+        width: 100%;
+    }
+    .new-product{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    .new-pro-card{
+        margin-bottom: 30px;
+    }
+    .new-products img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:480px) {
+    nav{
+        width: 100%;
+    }
+    nav .logo h1{
+        padding-top: 35px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 ;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .container .title h1{
+        font-size: 28px;
+        color: black;
+        line-height: 42px;
+    }
+    .container img{
+        overflow: hidden;
+        width:95%;
+        padding-right: 15px;
+        transition: transform 1s;
+    }
+    .popular-brand{
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+    .popular-brand .top-brand{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        border: none;
+    }
+    .popular-brand .top-brand img{
+        padding: 18px ;
+    }
+    .popular-products a{
+        padding-top: 30px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        display: block;
+    }
+    .popular-products {
+        width: 100%;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .popular-products .title{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .products img{
+        width: 100%;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding: 0 15px;
+    }
+    .product-card{
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .new-products {
+        width: 100%;
+        margin: 0 ;
+        margin-top: 100px;
+    }
+    .new-pro-card{
+        margin-bottom: 30px;
+    }
+    .new-products img{
+        width: 100%;
+    }
+    .new-product{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .new-pro-card .products-description span{
+        bottom: 22%;
+    }
 }
