@@ -252,12 +252,12 @@ button:hover{
 }
 @media screen and (max-width:1080px){
     main{
-        width: 900px;
+        width: 800px;
         margin: 0 auto;
     }
     nav {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 140px;
     }
     .container{
         width: 100%;
@@ -294,7 +294,7 @@ button:hover{
 }
 @media screen and (max-width:768px){
     main{
-        width: 700px;
+        width: 600px;
         margin: 0 auto;
     }
     nav{
@@ -362,10 +362,13 @@ button:hover{
     .new-products img{
         width: 100%;
     }
+    #footer{
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width:480px) {
     main{
-        width: 500px;
+        width: 400px;
         margin: 0 auto;
     }
     nav{
@@ -461,8 +464,5 @@ button:hover{
     }
     .new-pro-card .products-description span{
         bottom: 22%;
-    }
-    #footer{
-        width: 100vw;
     }
 }
