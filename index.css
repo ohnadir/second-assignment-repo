@@ -220,16 +220,17 @@ button:hover{
 }
 /* Footer Style */
 
-footer{
-    width: 100%;
+#footer{
+    width: 100vw;
     margin-top: 100px;
     background-color: #0A0826;
-}
-.foot{
-    padding: 50px 0;
+} 
+.foot{ 
     text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
 }
-.foot h1{
+.foot h1{ 
     color: #ffffff;
     font-size: 24px;
     line-height: 36px;
@@ -255,24 +256,23 @@ footer{
     .container{
         width: 100%;
         margin: 0 ;
-        padding: 0 50px;
         margin-bottom: 50px;
+        padding: 0 50px;
     }
     .container img{
         width: 100%;
     }
     .popular-brand {
-        
-        padding: 0 50px;
         width: 100%;
         margin: 0;
         margin-right: 0;
+        padding: 0 50px;
     }
     .popular-products{
         width: 100%;
         margin: 0;
-        padding: 0 50px;
         margin-bottom: 50px;
+        padding: 0 50px;
     }
     .products img{
         width: 100%;
@@ -281,16 +281,12 @@ footer{
         grid-gap: 20px;
     }
     .new-products{
-        padding: 0 50px;
         width: 100%;
         margin: 0 ;
+        padding: 0 50px;
     }
     .new-products img{
         width: 100%;
-    }
-    .foot{
-        width: 100%;
-        margin: 0;
     }
 }
 @media screen and (max-width:768px){
@@ -454,5 +450,8 @@ footer{
     }
     .new-pro-card .products-description span{
         bottom: 22%;
+    }
+    #footer{
+        width: 100vw;
     }
 }
